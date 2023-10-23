@@ -1,0 +1,73 @@
+.wrapper {
+    max-width: 1100px;
+    margin:  0 auto;
+}
+.how-use-tobopay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+    padding-bottom: 3em;
+   padding-left: 15em;
+}
+.how-use-tobopay img {
+    max-width: 400px;
+    margin: 0px;
+    padding: 0px;
+}
+.how-use-tobopay h4 {
+    font-family: inter;
+    font-weight: 700;
+    font-size: 3.5rem;
+    width: 70%;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 0.5em;
+    line-height: 1.2em;
+}
+
+.how-use-tobopay h4 strong {
+    color: #533D86;
+}
+.how-use-tobopay .steps {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.5em;
+  
+}
+.how-use-tobopay .steps img {
+    width: 45px;
+}
+.how-use-tobopay .steps p {
+padding: 0.5em;
+  font-family: inter;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+@media only screen and (max-width: 1000px) {
+    .how-use-tobopay {
+        flex-direction: column-reverse;
+        padding: 0px;
+    }
+    .how-use-tobopay img {
+      max-width: 80%;
+    }
+    .how-use-tobopay h4 {
+       font-size: 2.8em;
+       width: 90%;
+       padding-left:1.2em;
+       line-height: 1.4em;
+    
+    }
+    .how-use-tobopay .steps {
+    padding-left: 4em;
+    width: 80%;
+    }
+    .how-use-tobopay .steps img {
+        width: 40px;
+    }
+    .how-use-tobopay .steps p {
+        font-size: 1.5rem;
+    }
+
+}

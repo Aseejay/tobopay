@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,body {
+    padding: 0px;
+    margin: 0px;
+ 
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding: 10px;
+}
+
+body {
+    
+    margin: 0px;
+    padding: 0px;
+}

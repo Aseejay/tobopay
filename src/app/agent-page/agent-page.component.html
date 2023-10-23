@@ -1,0 +1,75 @@
+
+<div *ngIf="!toggle">  
+    <app-learn-more></app-learn-more>
+<div class="wrapper" id="agent">
+    <app-header></app-header>
+</div>
+<div class="background">
+<div class="wrapper">
+    <main>
+        <div class="left">
+            <div class="text-info">
+                <img src="../../assets/images/Line.svg" alt="">
+                <p>Join the Tobopay agents across the nation</p>
+            </div>
+    <h4>Become an agent</h4>
+        </div>
+        <div class="right">
+    <p>Are you looking to earn extra income? Become a Tobopay agent and offer various services such as bills payment, 
+        airtime recharge, and many more to your community. Join us today!</p>
+        </div>
+    </main>
+</div>
+</div>
+<div class="wrapper">
+  <div class="form-agent">
+    <form>
+        <div class="form-info">
+        <div>
+            <p>Enter your first name</p>
+            <input type="text" placeholder="First Name">
+        </div>
+        <div>
+            <p>Enter your Last Name</p>
+            <input type="number" placeholder="Last Name">
+        </div>
+        </div>
+        <p>Enter your email address</p>
+        <input type="email" placeholder="enter your email address">
+        <p>Enter your Tobopay username</p>
+        <input type="email" placeholder="enter your email address">
+        <p>Select means of identity</p>
+        <select>
+           <option selected>Select means of identity</option>
+        </select>
+        <p><strong>upload document</strong></p>
+<div class="hero" (dragover)="dragOver($event)" (drop)="drop($event)">
+    <label for="document" class="upload-container">
+        <input type="file" id="document" (change)="inputFile($event)">
+        <div *ngIf="!docState">
+            <img src="../../assets/images/Vector.svg"  alt="">
+            <p><strong>Click to upload</strong> or drag and drop</p>
+            <p>PNG,JPG,GIF or MP4</p>
+            <p>Max. 10MB</p>
+        </div>
+   
+            <img [src]="imgFile" alt="" *ngIf="imgFile" class="img-file">
+            <video *ngIf="videoFile" width="400px" height="200px" controls>
+                <source [src]="videoFile">
+            </video>
+       
+    </label>
+</div>
+      
+        <br>
+        <button>Send Message</button>
+            </form>
+  </div>
+
+
+</div>
+<app-footer></app-footer>
+</div>
+<div *ngIf="toggle">
+    <app-mobile-header></app-mobile-header>
+</div>

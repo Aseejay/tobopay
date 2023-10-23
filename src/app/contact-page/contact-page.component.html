@@ -1,0 +1,55 @@
+<div *ngIf="!toggle">  
+    <app-learn-more></app-learn-more>
+<div class="wrapper">
+    <app-header></app-header>
+</div>
+<div class="background">
+<div class="wrapper">
+    <main>
+        <div class="left">
+            <div class="text-info">
+                <img src="../../assets/images/Line.svg" alt="">
+                <p>Get in touch with us</p>
+            </div>
+    <h4>Contact Us</h4>
+        </div>
+        <div class="right">
+    <p>Got a question or need help with Tobopay? Our friendly customer support team is 
+        always here to assist you. Reach out to us anytime via phone, email, or our online contact form.</p>
+        </div>
+    </main>
+</div>
+</div>
+<div class="wrapper">
+  <div class="form-group">
+    <form>
+        <div class="form-contact">
+        <div>
+            <p>Full Name</p>
+            <input type="text" placeholder="Enter your full name">
+        </div>
+        <div>
+            <p>Phone Number (optional)</p>
+            <input type="number" placeholder="Enter your number">
+        </div>
+        </div>
+        <p>Email Address</p>
+        <input type="email" placeholder="enter your email address">
+        <p>Reasons For Contact</p>
+        <select>
+           <option selected>Select reason for contact</option>
+        </select>
+        <p><strong>Message</strong></p>
+        <textarea cols="80" rows="8" placeholder="Enter your message here.."></textarea>
+        <br>
+        <button>Send Message</button>
+            </form>
+  </div>
+
+
+</div>
+<app-footer></app-footer>
+</div>
+<div *ngIf="toggle">
+    <app-mobile-header></app-mobile-header>
+</div>

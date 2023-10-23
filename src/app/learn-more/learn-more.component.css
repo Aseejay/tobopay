@@ -1,0 +1,45 @@
+
+.learn-more {
+    background: linear-gradient(to right, #2A1F43 0%, #533D86 100%);
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    }
+    .learn-more p {
+         padding: 0px;
+        margin: 0px;
+        color: white;
+        font-family: inter;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding-right: 0.4em;
+    }
+    .learn-more img {
+        padding-top: 5px;
+        margin: 0px;
+    }
+    
+    .learn-more .message-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .learn-more .cancel {
+        padding-right: 15px;
+        cursor: pointer;
+    }
+
+
+@media only screen and (max-width: 1000px) {
+    .learn-more p {
+        font-size: 1rem;
+    }
+.learn-more img {
+    max-width: 250px;
+}
+
+}

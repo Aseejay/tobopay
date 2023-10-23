@@ -1,0 +1,155 @@
+.wrapper {
+    max-width: 1100px;
+    margin:  0 auto;
+}
+.why-choose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2em;
+}
+.why-choose h4 {
+    font-weight: 700;
+    font-family: inter;
+    font-size: 4rem;
+padding: 0px;
+margin: 0px;
+padding-top: 2.5em;
+}
+.why-choose .mobile p {
+    display: none;
+}
+.why-choose strong {
+    color: #533D86;
+}
+.why-choose p {
+    font-size: 1.3rem;
+    font-family: inter;
+    font-weight: 400;
+    color:#010E0E;
+    line-height: 0.5em;
+}
+.reasons {
+    padding-top: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#EEECF3;
+   margin: 0px;
+   padding: 0px;
+    border-radius: 25px;
+
+}
+.card {
+    width: 90%;
+    margin: 2em;
+}
+.card-active {
+    width: 90%;
+    background-color: #FFFFFF;
+  
+      border-radius: 25px;
+      margin: 0px;
+      padding: 0px;
+     margin: 1em;
+     padding: 1.3em;
+  
+}
+.reasons .card h4 {
+    
+    color: #010E0E;
+    font-family: inter;
+    font-weight: 700;
+    font-size: 1.7rem;
+    padding: 0px;
+    margin: 0px;
+ padding-bottom: 0.5em;
+}
+
+.reasons .card-active img {
+    margin: 0px;
+    padding: 0px;
+
+}
+.reasons .card-active h4 {
+  
+    color: #010E0E;
+    font-family: inter;
+    font-weight: 700;
+    font-size: 1.7rem;
+    padding: 0px;
+    margin: 0px;
+padding-bottom: 0.5em;
+
+}
+.reasons .card p {
+    color: #010E0E;
+    font-family: inter;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 0px;
+    margin: 0px;
+}
+.reasons .card-active p {
+    color: #010E0E;
+    font-family: inter;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 0px;
+    margin: 0px;
+    
+}
+.reasons .card img {
+    width: 40px;
+    padding-bottom: 1em;
+}
+
+.reasons .card-active img {
+    width: 40px;
+    padding-bottom: 1em;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .why-choose h4 {
+        font-size:3rem;
+       }
+       .why-choose p {
+         display: none;
+       }
+   
+       .why-choose p.mobile {
+           display: block;
+           padding: 0px;
+           margin: 0px;
+           font-size: 1.5rem;
+           padding: 10px;
+           line-height: 2.2rem;
+           color: #616161;
+       }
+       .reasons {
+           flex-direction: column;
+           margin: 2em;
+       }
+   .reasons .card-active {
+       padding: 1em;
+       padding-bottom: 3em;
+   }
+       .reasons .card img {
+           width: 35px;
+       }
+       .reasons .card-active img {
+           width: 35px;
+       }
+   .reasons .card-active p {
+       width: 70%;
+   }
+       .reasons .card-active h4 {
+           font-size: 1.5rem;
+       }
+       .reasons .card h4 {
+           font-size: 1.5rem;
+       }
+   
+}

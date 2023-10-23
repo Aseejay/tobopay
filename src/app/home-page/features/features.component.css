@@ -1,0 +1,393 @@
+.wrapper {
+    max-width: 1100px;
+    margin:  0 auto;
+}
+.features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2em;
+}
+.features h4 {
+    font-weight: 700;
+    font-family: inter;
+    font-size: 4rem;
+padding: 0px;
+margin: 0px;
+padding-top: 2.5em;
+}
+
+.features p {
+    font-size: 1.3rem;
+    font-family: inter;
+    font-weight: 400;
+    color:#010E0E;
+    line-height: 1.5em;
+    padding-right: 14em;
+    padding-left: 14em;
+}
+.features-rowOne {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 2em;
+
+}
+.features-rowOne .left {
+    text-align: center;
+    background-color:#D5D0F5;
+    border-radius: 15px;
+margin: 0px;
+padding: 0px;
+}
+
+.features-rowOne .left h4 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 2rem;
+    font-family: inter;
+    font-weight: 700;
+}
+
+.features-rowOne .left p {
+    font-size: 1.2rem;
+    font-family: inter;
+    font-weight: 500;
+    padding: 4em;
+    padding-bottom: 0px;
+    line-height: 1.7em;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.features-rowOne .left img {
+    max-width: 250px;
+    padding: 0px;
+    padding-top: 7em;
+    margin: 0px;
+}
+.features-rowOne .right {
+    text-align: center;
+    background-color: #FEE4C4;
+  padding: 0px;
+  margin: 0px;
+ border-radius: 15px;
+
+
+}
+.features-rowOne .right img {
+    max-width: 500px;
+    padding: 0px;
+    margin: 0px;
+}
+.features-rowOne .right h4 {
+    font-size: 2rem;
+    font-family: inter;
+    font-weight: 700;
+    padding: 0px;
+    margin: 0px;
+}
+
+.features-rowOne .right p {
+    font-size: 1.2rem;
+    font-family: inter;
+    font-weight: 500;
+    padding: 7em;
+    line-height: 1.7em;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    
+}
+
+.features-rowTwo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 3em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+
+}
+.features-rowTwo .left {
+    text-align: center;
+    background-color:#FCC7C3;
+    border-radius: 15px;
+margin: 0px;
+padding: 0px;
+}
+
+.features-rowTwo .left h4 {
+    padding: 0px;
+    margin: 0px;
+    padding-top:2em;
+    font-size: 2rem;
+    font-family: inter;
+    font-weight: 700;
+}
+
+.features-rowTwo .left p {
+    font-size: 1.2rem;
+    font-family: inter;
+    font-weight: 500;
+    padding: 6em;
+    line-height: 1.7em;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.features-rowTwo .left img {
+    max-width: 400px;
+    padding: 0px;
+    padding-top: 5em;
+    margin: 0px;
+}
+.features-rowTwo .right {
+    text-align: center;
+    background-color: #CBECE6;
+  padding: 0px;
+  margin: 0px;
+ border-radius: 15px;
+
+
+}
+.features-rowTwo .right img {
+    max-width: 300px;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 4em;
+}
+.features-rowTwo .right h4 {
+    font-size: 2rem;
+    font-family: inter;
+    font-weight: 700;
+    padding: 0px;
+    margin: 0px;
+    padding-top:2em;
+}
+
+.features-rowTwo .right p {
+    font-size: 1.2rem;
+    font-family: inter;
+    font-weight: 500;
+    padding: 6em;
+    line-height: 1.7em;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    
+}
+.features-rowThree {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ padding-bottom: 4em;   
+}
+
+.features-rowThree .gift-card {
+    background-color: #B8E0F9;
+    padding: 2em;
+    max-width: 300px;
+    border-radius: 20px;
+}
+
+.features-rowThree .gift-card img {
+display: block;
+    max-width: 250px;
+    margin: 0 auto;
+}
+.features-rowThree .gift-card h4 {
+    font-size: 2rem;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 1.5em;
+    font-family: inter;
+    font-weight: 700;
+    text-align: center;
+}
+
+.features-rowThree .gift-card p {
+    font-size: 1.3rem;
+    font-family: inter;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.5em;
+}
+.features-rowThree .t-cash {
+    background-color: #D1D3A9;
+    padding: 2em;
+    max-width: 300px;
+    border-radius: 20px;
+}
+.features-rowThree .t-cash img {
+    display: block;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    .features-rowThree .t-cash h4 {
+        font-size: 2rem;
+        margin: 0px;
+        padding: 0px;
+        padding-top: 1em;
+        font-family: inter;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    .features-rowThree .t-cash p {
+        font-size: 1.3rem;
+        font-family: inter;
+        font-weight: 500;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        line-height: 1.5em;
+    }
+
+
+.features-rowThree .airtime-swap {
+    background-color: #CBECE6;
+    padding: 2em;
+    max-width: 300px;
+    border-radius: 20px;
+
+}
+.features-rowThree .airtime-swap img {
+    display: block;
+        max-width: 250px;
+        margin: 0px;
+        padding: 0px;
+        margin: 0 auto;
+        
+    }
+    .features-rowThree .airtime-swap h4 {
+        font-size: 2rem;
+        margin: 0px;
+        padding: 0px;
+        padding-top: 1em;
+        font-family: inter;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    .features-rowThree .airtime-swap p {
+        font-size: 1.3rem;
+        font-family: inter;
+        font-weight: 500;
+        text-align: center;
+        line-height: 1.5em;
+  
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .features {
+            padding: 3em;
+        }
+            .features h4 {
+        
+                font-size:2.5rem;
+                padding: 0px;
+                margin: 0px;
+                padding: 0.3em;
+               }
+        
+               .features p{
+                display: block;
+                padding: 0px;
+                margin: 0px;
+                font-size: 1.3rem;
+           
+                line-height: 2.2rem;
+                color: #616161;
+            }
+            .features-rowOne {
+                flex-direction: column;
+           
+            }
+        .features-rowOne .left {
+            margin: 0px;
+            padding: 0px;
+            width: 85%;
+        }
+        .features-rowOne .left h4 {
+        margin: 0px;
+        padding: 0px;
+        
+        } 
+        
+        
+        .features-rowOne .right {
+            width: 85%;
+        }
+            .features-rowOne .left img {
+                padding-top: 8em;
+                max-width: 230px;
+            }
+            .features-rowOne .right img {
+                padding-bottom: 4.5em;
+                max-width: 310px;
+            }
+        
+            .features-rowOne .left p {
+                font-size: 1.3rem;
+                font-family: inter;
+                font-weight: 500;
+                padding-bottom: 2em;
+                line-height: 1.6em;
+                padding:0px;
+            }
+            .features-rowOne .right p {
+                font-size: 1.3rem;
+                font-family: inter;
+                font-weight: 500;
+                line-height: 1.6em;
+           padding: 0px;
+            }
+         .features-rowTwo {
+            flex-direction: column;
+         }   
+         .features-rowTwo .left {
+            margin: 0px;
+            padding: 0px;
+            width: 85%;
+        }
+        .features-rowTwo .right {
+            margin: 0px;
+            padding: 0px;
+            width: 85%;
+        }
+        .features-rowTwo .left img {
+            max-width: 300px;
+        }
+        
+        .features-rowTwo .left p {
+            font-size: 1.2em;
+            line-height: 1.5em;
+            padding: 0px;
+        }
+        
+        .features-rowTwo .right img {
+            max-width: 250px;
+        }
+        
+        .features-rowTwo .right p {
+            font-size: 1.2em;
+            line-height: 1.5em;
+            padding: 0px;
+        }
+        
+        .features-rowThree {
+            flex-direction: column;
+            gap: 2em;
+        }
+        .features-rowThree .gift-card {
+            max-width: 75%;
+        }
+        .features-rowThree .airtime-swap {
+            max-width: 75%;
+        }
+        .features-rowThree .t-cash {
+        
+            max-width: 75%;
+        }
+
+    }
