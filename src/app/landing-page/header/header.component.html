@@ -1,0 +1,78 @@
+<header>
+  <a href="#"
+    ><img class="logo" src="../.../../../../assets/images/logo.png" alt=""
+  /></a>
+
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#why">Why Tobopay</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#how">How it works</a></li>
+  </ul>
+  <div class="auth-group">
+    <a href="#" class="sign-up">Sign up</a>
+    <a href="#" class="sign-in">Sign in</a>
+  </div>
+
+  <img
+    (click)="sidebarVisible = true"
+    class="phone"
+    src="../../../assets/images/toggle.png"
+    alt=""
+  />
+</header>
+<p-sidebar [(visible)]="sidebarVisible" [fullScreen]="true">
+  <ng-template pTemplate="header">
+    <img
+      style="width: 150px"
+      src="../.../../../../assets/images/logo.png"
+      alt=""
+    />
+    <hr style="border: 1px solid #f3f3f3" />
+  </ng-template>
+
+  <div class="mobile-header">
+    <div class="auth-group">
+      <a href="#" class="sign-up">Sign up</a>
+      <a href="#" class="sign-in">Sign in</a>
+    </div>
+    <ul>
+      <li>
+        <p>Home</p>
+        <a href="#" (click)="cancel()"
+          ><img
+            style="width: 25px"
+            src="../../../assets/images/solar_arrow-right-linear.png"
+            alt=""
+        /></a>
+      </li>
+      <li>
+        <p>Why Tobopay</p>
+        <a href="#why" (click)="cancel()"
+          ><img
+            style="width: 25px"
+            src="../../../assets/images/solar_arrow-right-linear.png"
+            alt=""
+        /></a>
+      </li>
+      <li>
+        <p>Features</p>
+        <a href="#features" (click)="cancel()"
+          ><img
+            style="width: 25px"
+            src="../../../assets/images/solar_arrow-right-linear.png"
+            alt=""
+        /></a>
+      </li>
+      <li>
+        <p>How it works</p>
+        <a href="#how" (click)="cancel()"
+          ><img
+            style="width: 25px"
+            src="../../../assets/images/solar_arrow-right-linear.png"
+            alt=""
+        /></a>
+      </li>
+    </ul>
+  </div>
+</p-sidebar>

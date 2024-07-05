@@ -1,0 +1,113 @@
+<div class="container">
+    <div class="header">
+        <div class="card-group">
+            <p>
+              <img src="../../../assets/images/Frame 144.png" alt="" /> Read our terms of services
+              with us
+            </p>
+          </div>
+          <h4>Terms of Services</h4>
+          <p>Table of Contents</p>
+          <ul>
+            <li><a [class.active] = "activeClass('/terms-of-service#Introduction')" href="/terms-of-service#Introduction">Introduction</a></li>
+            <li><a [class.active] = "activeClass('/terms-of-service#Definitions')" href="/terms-of-service#Definitions">Definitions</a></li>
+            <li><a [class.active] = "activeClass('/terms-of-service#Usereligibility')" href="/terms-of-service#Usereligibility">User eligibility</a></li>
+            <li><a [class.active] = "activeClass('/terms-of-service#Userobligations')" href="/terms-of-service#Userobligations">User obligations</a></li>
+            <li><a [class.active] = "activeClass('/terms-of-service#Servicecharges')" href="/terms-of-service#Servicecharges">Service charges</a></li>
+            <li><a [class.active] = "activeClass('/terms-of-service#Securityoftransactions')" href="/terms-of-service#Securityoftransactions">Security of transactions</a></li>
+            <li><a [class.active] = "activeClass('/terms-of-service#Disclaimerofliability')" href="/terms-of-service#Disclaimerofliability">Disclaimer of liability</a></li>
+            <li><a [class.active] = "activeClass('/terms-of-service#Terminationofservice')" href="/terms-of-service#Terminationofservice">Termination of service</a></li>
+            <li><a [class.active] = "activeClass('/terms-of-service#Governinglaw')" href="/terms-of-service#Governinglaw">Governing law</a></li>
+            <li><a [class.active] = "activeClass('/terms-of-service#Disputeresolution')" href="/terms-of-service#Disputeresolution">Dispute resolution</a></li>
+            <li><a [class.active] = "activeClass('/terms-of-service#Modifications')" href="/terms-of-service#Modifications">Modifications</a></li>
+            <li><a [class.active] = "activeClass('/terms-of-service#Conclusion')" href="/terms-of-service#Conclusion">Conclusion</a></li>
+          </ul>
+    </div>
+    <div class="header-mobile">
+      <div class="card-group">
+          <p>
+            <img src="../../../assets/images/Frame 144.png" alt="" /> Read our terms of services
+            with us
+          </p>
+        </div>
+        <h4 >Terms of Services</h4>
+        <div style="display: flex; justify-content: space-between;align-items: center;">
+          <p  class="title" >Table of Contents</p>
+
+        <img (click)="toggleDropdown()" style="cursor: pointer;" src="../../../assets/images/solar_alt-arrow-down-linear.png" width="25px" alt="">
+        </div>
+        <ul  *ngIf="isOpen"  @dropdownAnimation>
+          <li><a [class.active] = "activeClass('/terms-of-service#Introduction')" href="/terms-of-service#Introduction">Introduction</a></li>
+          <li><a [class.active] = "activeClass('/terms-of-service#Definitions')" href="/terms-of-service#Definitions">Definitions</a></li>
+          <li><a [class.active] = "activeClass('/terms-of-service#Usereligibility')" href="/terms-of-service#Usereligibility">User eligibility</a></li>
+          <li><a [class.active] = "activeClass('/terms-of-service#Userobligations')" href="/terms-of-service#Userobligations">User obligations</a></li>
+          <li><a [class.active] = "activeClass('/terms-of-service#Servicecharges')" href="/terms-of-service#Servicecharges">Service charges</a></li>
+          <li><a [class.active] = "activeClass('/terms-of-service#Securityoftransactions')" href="/terms-of-service#Securityoftransactions">Security of transactions</a></li>
+          <li><a [class.active] = "activeClass('/terms-of-service#Disclaimerofliability')" href="/terms-of-service#Disclaimerofliability">Disclaimer of liability</a></li>
+          <li><a [class.active] = "activeClass('/terms-of-service#Terminationofservice')" href="/terms-of-service#Terminationofservice">Termination of service</a></li>
+          <li><a [class.active] = "activeClass('/terms-of-service#Governinglaw')" href="/terms-of-service#Governinglaw">Governing law</a></li>
+          <li><a [class.active] = "activeClass('/terms-of-service#Disputeresolution')" href="/terms-of-service#Disputeresolution">Dispute resolution</a></li>
+          <li><a [class.active] = "activeClass('/terms-of-service#Modifications')" href="/terms-of-service#Modifications">Modifications</a></li>
+          <li><a [class.active] = "activeClass('/terms-of-service#Conclusion')" href="/terms-of-service#Conclusion">Conclusion</a></li>
+        </ul>
+  </div>
+    <div class="main-content">
+        <h4 id="Introduction">Introduction</h4>
+        <p>Welcome to Tobopay, a financial technology platform designed to revolutionize the way Nigerians transact and manage their financial affairs. By accessing or using the Tobopay platform, you agree to be bound by these terms of service. Please read them carefully before proceeding</p>
+        <h4 id="Definitions">Definitions</h4>
+        <strong>For the purposes of these terms of service, the following definitions shall apply:</strong>
+        <p>Tobopay – means the fintech platform owned and operated by Tbp Technologies Ltd.</p>
+        <p>User – means anyone who accesses or uses Tobopay platform.</p>
+        <p>Service – means any financial service offered by Tobopay, including but not limited to bill payments, money transfers, virtual accounts, education, and airtime swap</p>
+        <p>Account – means a user’s personal account on the Tobopay platform.</p>
+        <p>Password – means the secret code chosen by the user to access his or her account.</p>
+        <p>OTP – means One-Time Password, generated by the platform to authenticate a transaction.</p>
+
+        <h4 id="Usereligibility">User eligibility</h4>
+        <p>A user of the Tobopay platform must be of legal age in Nigeria (13 years or above).</p>
+        <p>A user must have a valid Nigerian phone number and email address to register on the platform.</p>
+        <p>A user must be able to provide valid and verifiable identification documents upon request by Tobopay.</p>
+
+        <h4 id="Userobligations">User obligations</h4>
+ <p> Users of the Tobopay platform agree to provide accurate and truthful information during the registration process.</p>
+<p>Users must keep their login credentials (phone number and password) secure and prevent unauthorized access to their account.</p>
+<p>Users agree not to use the platform for any illegal purposes, including money laundering, financing of terrorism, or any other criminal activity.</p>
+<p>Users must comply with all applicable laws and regulations in Nigeria, including taxation laws.</p>
+
+<h4 id="Servicecharges">Service charges</h4>
+<p>Tobopay may charge fees for some services on the platform, and such fees shall be clearly stated in the user interface.</p>
+
+<p>Tobopay reserves the right to change its fees at any time, with adequate notice to users.</p>
+
+<h4 id="Securityoftransactions">Security of transactions</h4>
+<p>Tobopay employs state-of-the-art security measures to protect user transactions on the platform.</p>
+
+<p>Users must take reasonable steps to protect themselves from fraudulent activities, including avoiding sharing OTPs with anyone.</p>
+
+<p>in the event of a security breach, users must notify Tobopay immediately to protect their accounts.</p>
+
+<h4 id="Disclaimerofliability">Disclaimer of liability</h4>
+<p>Tobopay shall not be liable for any damages resulting from the use or inability to use the platform, including but not limited to, damages for loss of profits, business interruption, or any other indirect damages.</p>
+
+<p>Tobopay shall not be liable for any damages resulting from the acts or omissions of third-party service providers, including banks, telecommunications networks, and other payment processors</p>
+<h4 id="Terminationofservice">Termination of service</h4>
+<p>Tobopay reserves the right to terminate any user account that violates the terms of service.</p>
+
+<p>Tobopay reserves the right to terminate any user account that violates the terms of service.</p>
+<h4 id="Governinglaw">Governing law</h4>
+<p>These terms of service shall be governed by and construed in accordance with the laws of Nigeria.</p>
+
+<h4 id="Disputeresolution">Dispute resolution</h4>
+<p>Any dispute arising from or related to these terms of service shall be resolved amicably by the parties involved.</p>
+
+<p>In the event of a failed resolution, the dispute shall be referred to a court of competent jurisdiction in Nigeria</p>
+
+<h4 id="Modifications">Modifications</h4>
+<p>Tobopay reserves the right to modify or amend these terms of service at any time, with adequate notice to users.</p>
+
+<h4 id="Conclusion">Conclusion</h4>
+<p>By accessing or using the Tobopay platform, you agree to be bound by these terms of service. If you do not agree with any provision or all of these terms, you may not use the platform.</p>
+    </div>
+</div>
+
+

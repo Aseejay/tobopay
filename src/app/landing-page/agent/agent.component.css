@@ -1,0 +1,205 @@
+main {
+  display: flex;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+main .left .text-info {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+main .left .text-info img {
+  width: 20px;
+}
+
+main .left .text-info p {
+  font-weight: 600;
+  padding: 5px;
+  padding-left: 3px;
+  width: 85%;
+  padding-right: 30px;
+  gap: 5px;
+  border-radius: 15px;
+  font-size: 15px;
+  color: #171717;
+  display: flex;
+  align-items: center;
+  border: 1px solid #f0eef7;
+}
+
+main .left h4 {
+  font-size: 42px;
+  margin: 0px;
+}
+main .left p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.3rem;
+  color: #514767;
+  width: 75%;
+}
+main .right {
+  background-color: #f0eef7;
+  width: 80%;
+  border-radius: 8px;
+  width: 52%;
+}
+main .right form {
+  margin: 15px;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: #fafafa;
+}
+main .right form input {
+  font-family: public sans;
+  outline: none;
+  font-size: 14px;
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  background-color: #fafafa;
+  padding: 13px;
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+
+main .right form input::placeholder {
+  color: #a098b3;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+main .right form p {
+  font-size: 14px;
+  color: #514767;
+}
+.form-agent button {
+  width: 100%;
+  margin: 1em;
+  text-align: center;
+  outline: none;
+  background-color: #533d86;
+  padding: 1.2em;
+  border-radius: 25px;
+  color: #fafafa;
+  font-weight: 500;
+  border: 1px solid transparent;
+}
+
+.hero {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+.upload-container {
+  background-color: #fafafa;
+  width: 80em;
+  border: 0.6px solid #e0e0e0;
+  height: 12em;
+  border-radius: 10px;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.upload-container .img-file {
+  width: 150px;
+}
+
+label.upload-container p {
+  text-align: center;
+  font-size: 17px;
+}
+.upload-container strong {
+  color: #0063f7;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.upload-container input {
+  display: none;
+}
+
+main .right form button {
+  width: 100%;
+  margin-top: 6px;
+  font-family: public sans;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 8px;
+  color: #fafafa;
+  background-color: #533d85;
+  border: none;
+}
+
+main .right form button:disabled {
+  opacity: 0.5;
+}
+:host ::ng-deep .p-dropdown {
+  width: 100%;
+  background-color: #fafafa;
+}
+
+:host ::ng-deep .p-dropdown .p-dropdown-label.p-placeholder {
+  color: #a098b3;
+  font-size: 14px;
+  font-weight: 200; /* Replace this with your desired placeholder color */
+}
+@media only screen and (max-width: 1000px) {
+  .background {
+    background-size: 100em;
+  }
+  main {
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 10px;
+    gap: 20px;
+  }
+
+  main .left {
+    width: 100%;
+  }
+  main .left .text-info p {
+    width: 100%;
+    font-size: 13px;
+  }
+  main .left h4 {
+    font-size: 30px;
+  }
+  main .right {
+    width: 100%;
+  }
+  main .left p {
+    font-size: 14px;
+    width: 100%;
+  }
+  .form-agent {
+    padding: 2em;
+  }
+  .form-agent .form-info input {
+    width: 80%;
+  }
+  .form-agent input {
+    width: 90%;
+    font-family: 1.5rem;
+  }
+  .form-agent select {
+    width: 90%;
+    height: 4em;
+  }
+
+  .form-agent button {
+    padding: 1em;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 50%;
+    border-radius: 27px;
+    font-size: 1.5rem;
+  }
+
+  .upload-container {
+    width: 30em;
+    height: 20em;
+  }
+}

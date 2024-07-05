@@ -1,0 +1,139 @@
+<div class="container">
+  <div class="left">
+    <div class="card-group">
+      <p>
+        <img src="../../../assets/images/Frame 144.png" alt="" /> Get in touch
+        with us
+      </p>
+    </div>
+    <h4>Contact Us</h4>
+    <p>
+      Got a question or need help with Tobopay? Our friendly customer support
+      team is always here to assist you. Reach out to us anytime via phone,
+      email, or our online contact form.
+    </p>
+  </div>
+  <div class="right">
+    <div class="form">
+      <p>Full Name</p>
+      <input
+        [(ngModel)]="fullName"
+        type="text"
+        placeholder="Enter your full name"
+      />
+      <p>Phone Number <span style="color: #81759f">(optional)</span></p>
+      <input
+        [(ngModel)]="number"
+        type="text"
+        placeholder="Enter your phone number"
+      />
+      <p>Email <span style="color: #81759f"></span></p>
+      <input [(ngModel)]="email" type="text" placeholder="Enter your email" />
+      <p>Reason for Contact</p>
+      <p-dropdown
+        styleClass="p-dropdown"
+        [options]="dues"
+        [(ngModel)]="selectedDues"
+        optionLabel="name"
+        [showClear]="true"
+        placeholder="Select reason for contact"
+      ></p-dropdown>
+      <p>Message</p>
+      <textarea
+        [(ngModel)]="message"
+        rows="7"
+        placeholder="Enter your message here"
+      ></textarea>
+      <br />
+      <button
+        (click)="submit()"
+        [disabled]="
+          message == '' ||
+          email == '' ||
+          fullName == '' ||
+          number == '' ||
+          selectedDues == null
+        "
+      >
+        Submit
+      </button>
+    </div>
+  </div>
+</div>
+<p-dialog
+  *ngIf="visible"
+  [(visible)]="visible"
+  [modal]="true"
+  styleClass="p-dialog"
+  [draggable]="false"
+  [resizable]="false"
+  [closable]="false"
+>
+  <br />
+  <app-spinner *ngIf="isLoading"></app-spinner>
+  <div *ngIf="!error && !isLoading">
+    <h4 style="text-align: center; color: black; margin: 0px; font-size: 18px">
+      Message successful!
+    </h4>
+    <p style="text-align: center; font-size: 14px">
+      Congratulations, Your message was successful! 🎉 Thank you for using
+      Tobopay.
+    </p>
+    <img
+      style="width: 100px; display: block; margin: 0 auto"
+      src="../../../assets/images/Succcess check.png"
+      alt=""
+    />
+    <br />
+    <button
+      (click)="cancel()"
+      style="
+        margin: 0 auto;
+        display: block;
+        padding: 14px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 7px;
+        border: none;
+        background-color: #f0eef7;
+        font-family: public sans;
+        font-size: 15px;
+        color: #533d85;
+      "
+    >
+      Done
+    </button>
+  </div>
+  <div *ngIf="error">
+    <h4 style="text-align: center; color: black; margin: 0px; font-size: 18px">
+      Message Failed!
+    </h4>
+    <p style="text-align: center; font-size: 14px">
+      Failed to send the message
+    </p>
+    <img
+      style="width: 100px; display: block; margin: 0 auto"
+      src="../../../assets/images/solar_shield-warning-bold.png"
+      alt=""
+    />
+    <br />
+    <button
+      (click)="cancel()"
+      style="
+        margin: 0 auto;
+        display: block;
+        padding: 14px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 7px;
+        border: none;
+        background-color: #f0eef7;
+        font-family: public sans;
+        font-size: 15px;
+        color: #533d85;
+      "
+    >
+      Done
+    </button>
+  </div>
+</p-dialog>

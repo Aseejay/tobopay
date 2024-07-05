@@ -1,0 +1,128 @@
+<app-header></app-header>
+<div *ngIf="!toggle">
+  <div class="wrapper" id="agent"></div>
+  <div class="background">
+    <div class="wrapper">
+      <main>
+        <div class="left">
+          <div class="text-info">
+            <p>
+              <img src="../../../assets/images/Frame 144.png" alt="" />Join the
+              Tobopay agents across the nation
+            </p>
+          </div>
+          <h4>Become an agent</h4>
+          <p>
+            Are you looking to earn extra income? Become a Tobopay agent and
+            offer various services such as airtime top-up, data top-up, CableTv,
+            electricity, and many more to your community. join us today!
+          </p>
+        </div>
+        <div class="right">
+          <form #form="ngForm" (ngSubmit)="submit(form)">
+            <div *ngIf="firstStage">
+              <p>Tobopay username</p>
+              <input
+                name="username"
+                [(ngModel)]="username"
+                required
+                type="text"
+                placeholder="Enter your Tobopay username"
+              />
+            </div>
+            <div *ngIf="firstStage">
+              <p>Means of Identity</p>
+              <p-dropdown
+                name="identity"
+                styleClass="p-dropdown"
+                [options]="dues"
+                [(ngModel)]="selectedDues"
+                optionLabel="name"
+                [showClear]="true"
+                placeholder="Select reason for contact"
+              ></p-dropdown>
+            </div>
+
+            <p *ngIf="firstStage">Document</p>
+            <div
+              class="hero"
+              (dragover)="dragOver($event)"
+              (drop)="drop($event)"
+              *ngIf="firstStage"
+            >
+              <label for="document" class="upload-container">
+                <input
+                  type="file"
+                  id="document"
+                  (change)="inputFile($event)"
+                  name="img"
+                  ngModel
+                  required
+                />
+                <div *ngIf="!docState">
+                  <p class="header">
+                    <span style="color: #533d85; font-weight: 600"
+                      >Click to upload or drag and drop</span
+                    >
+                  </p>
+                  <p>
+                    <span style="color: #a098b3; font-size: 16px"
+                      >PNG,JPG,GIF</span
+                    >
+                  </p>
+                  <p>
+                    <span style="color: #a098b3; font-size: 15px"
+                      >Max. 10MB</span
+                    >
+                  </p>
+                </div>
+                <img
+                  [src]="imgFile"
+                  alt=""
+                  *ngIf="imgFile"
+                  class="img-file"
+                  loading="lazy"
+                />
+              </label>
+            </div>
+            <br />
+            <div *ngIf="secondStage">
+              <p>First Name</p>
+              <input
+                name="firstName"
+                [(ngModel)]="firstName"
+                required
+                type="text"
+                placeholder="Enter your first name"
+              />
+            </div>
+            <div *ngIf="secondStage">
+              <p>Last Name</p>
+              <input
+                name="lastName"
+                [(ngModel)]="lastName"
+                required
+                type="text"
+                placeholder="Enter your last name"
+              />
+            </div>
+            <div *ngIf="secondStage">
+              <p>Email</p>
+              <input
+                name="email"
+                [(ngModel)]="email"
+                required
+                type="text"
+                placeholder="Enter your email"
+              />
+            </div>
+            <button *ngIf="!isFetching" type="submit" [disabled]="form.invalid">
+              {{ firstStage ? "Next" : "Submit Request" }}
+            </button>
+            <button *ngIf="isFetching" disabled>Loading...</button>
+          </form>
+        </div>
+      </main>
+    </div>
+  </div>
+</div>

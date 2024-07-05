@@ -1,0 +1,139 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: calc(50% - 650px); /* Adjust based on half of your container width */
+  width: 1300px; /* Match the container width */
+  padding: 10px;
+  padding-right: 40px;
+  background-color: white;
+  z-index: 1000;
+}
+
+header img.logo {
+  max-width: 150px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  
+}
+
+header ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #000000;
+  font-weight: 400;
+ 
+}
+header .auth-group {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+header .auth-group a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+header .auth-group a.sign-up {
+  padding: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #f0eef7;
+  border-radius: 10px;
+  color: #533d85;
+}
+
+header .auth-group a.sign-in {
+  padding: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #533d85;
+  border-radius: 8px;
+  color: #fafafa;
+}
+
+header img.phone {
+  display: none;
+}
+@media (max-width: 1000px) {
+  header {
+    width: 100%;
+    left: 0px;
+    padding-right: 0px;
+  }
+  header ul {
+    display: none;
+  }
+
+  header .auth-group {
+    display: none;
+  }
+  header img.phone {
+    padding-right: 10px;
+    max-width: 35px;
+    display: block;
+  }
+
+  .mobile-header ul {
+    padding-left: 10px;
+    padding-right: 10px;
+    list-style: none;
+  }
+
+  .mobile-header ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #f3f3f3;
+  }
+  .mobile-header ul li a {
+    text-decoration: none;
+
+    font-weight: 400;
+  }
+
+  .mobile-header ul li p {
+    font-size: 16px;
+    color: #533d85;
+  }
+  .mobile-header .auth-group {
+    width: 100%;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+  .mobile-header .auth-group a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+  }
+  .mobile-header .auth-group a.sign-up {
+    padding: 16px;
+    width: 100%;
+    text-align: center;
+    background-color: #f0eef7;
+    border-radius: 10px;
+    color: #533d85;
+  }
+
+  .mobile-header .auth-group a.sign-in {
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #533d85;
+    border-radius: 8px;
+    color: #fafafa;
+    width: 100%;
+    text-align: center;
+  }
+}

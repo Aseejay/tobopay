@@ -1,45 +1,54 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomePageComponent } from './home-page/home-page.component';
-import { HeaderComponent } from './header/header.component';
-import { MobileHeaderComponent } from './mobile-header/mobile-header.component';
+import { AccordionModule } from 'primeng/accordion';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { HeaderComponent } from './landing-page/header/header.component';
+import { HomeComponent } from './landing-page/home/home.component';
+import { SidebarModule } from 'primeng/sidebar';
 import { FooterComponent } from './footer/footer.component';
-import { ContactPageComponent } from './contact-page/contact-page.component';
-import { LearnMoreComponent } from './learn-more/learn-more.component';
-import { AgentPageComponent } from './agent-page/agent-page.component';
-import { TermOfServiceComponent } from './term-of-service/term-of-service.component';
-import { FeaturesComponent } from './home-page/features/features.component';
-import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
-import { HttpClientModule} from '@angular/common/http';
-import { ServiceProvidersComponent } from './home-page/service-providers/service-providers.component';
-import { WhyChooseTobopayComponent } from './home-page/why-choose-tobopay/why-choose-tobopay.component';
-import { HowItWorkComponent } from './home-page/how-it-work/how-it-work.component';
+import { FooterSecondComponent } from './footer-second/footer-second.component';
+import { ContactUsComponent } from './landing-page/contact-us/contact-us.component';
+import { DropdownModule } from 'primeng/dropdown';
+import { FormsModule } from '@angular/forms';
+import { DialogModule } from 'primeng/dialog';
+import { HttpClientModule } from '@angular/common/http';
+import { SpinnerComponent } from './spinner/spinner.component';
+import { AgentComponent } from './landing-page/agent/agent.component';
+import { TermsOfServiceComponent } from './landing-page/terms-of-service/terms-of-service.component';
+import { PanelMenuModule } from 'primeng/panelmenu';
+import { PrivacyOfPolicyComponent } from './landing-page/privacy-of-policy/privacy-of-policy.component';
+import { DeactivateAccountComponent } from './landing-page/deactivate-account/deactivate-account.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomePageComponent,
+    LandingPageComponent,
     HeaderComponent,
-    MobileHeaderComponent,
+    HomeComponent,
     FooterComponent,
-    ContactPageComponent,
-    LearnMoreComponent,
-    AgentPageComponent,
-    TermOfServiceComponent,
-    FeaturesComponent,
-    PrivacyPolicyComponent,
-    ServiceProvidersComponent,
-    WhyChooseTobopayComponent,
-    HowItWorkComponent,
+    FooterSecondComponent,
+    ContactUsComponent,
+    SpinnerComponent,
+    AgentComponent,
+    TermsOfServiceComponent,
+    PrivacyOfPolicyComponent,
+    DeactivateAccountComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    BrowserAnimationsModule,
+    AccordionModule,
+    SidebarModule,
+    DropdownModule,
+    FormsModule,
+    DialogModule,
+    HttpClientModule,
+    PanelMenuModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -7,6 +6,5 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
-  constructor(private route:Router, private router:ActivatedRoute){}
 
 }

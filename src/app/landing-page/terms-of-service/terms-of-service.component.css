@@ -1,0 +1,176 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+.container .header .card-group {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .container .header h4 {
+    font-size: 40px;
+    margin: 0px;
+  }
+
+  .container .header-mobile {
+    display: none;
+  }
+  .container  .header p.title {
+    color: #171717;
+   font-size: 15px;
+   font-weight: 400;
+  }
+
+  .container .header ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .container .header ul li {
+    padding-bottom: 10px;
+  }
+
+  .container .header ul li a {
+    color: #514767;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .container .header ul li a.active {
+color: #171717;
+  }
+
+  .container .header ul li a:hover {
+color:#171717;
+  }
+  .container .header .card-group p {
+    font-weight: 600;
+    padding: 5px;
+    padding-left: 3px;
+    width: 100%;
+    padding-right: 30px;
+    gap: 5px;
+    border-radius: 15px;
+    font-size: 15px;
+    color: #171717;
+    display: flex;
+    align-items: center;
+    border: 1px solid #f0eef7;
+  }
+
+  .container .header .card-group img {
+    width: 20px;
+  }
+.container .main-content {
+    background-color: #FAF9FB;
+    padding: 25px;
+    border-radius: 8px;
+    width: 50%;
+}
+
+.container .main-content h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.container .main-content p {
+    font-size: 15px;
+    line-height: 1.7rem;
+}
+
+@media (max-width: 1000px) {
+
+  .container {
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 30px;
+  }
+
+
+  .container .main-content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  
+  .container .header-mobile {
+    display: block;
+    padding-left: 10px;
+  }
+
+  
+  .container .header {
+    display: none;
+  }
+
+  .container .header-mobile .card-group {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .container .header-mobile h4 {
+    font-size: 27px;
+    margin: 0px;
+  }
+
+ 
+  .container  .header-mobile p.title {
+    color: #171717;
+   font-size: 15px;
+   font-weight: 400;
+  }
+
+  .container .header-mobile ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .container .header-mobile ul li {
+    padding-bottom: 10px;
+  }
+
+  .container .header-mobile ul li a {
+    color: #514767;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .container .header-mobile ul li a.active {
+color: #171717;
+  }
+
+  .container .header-mobile ul li a:hover {
+color:#171717;
+  }
+  .container .header-mobile .card-group p {
+    font-weight: 600;
+    padding: 5px;
+    padding-left: 3px;
+    width: 100%;
+    padding-right: 30px;
+    gap: 5px;
+    border-radius: 15px;
+    font-size: 15px;
+    color: #171717;
+    display: flex;
+    align-items: center;
+    border: 1px solid #f0eef7;
+  }
+
+  .container .header-mobile .card-group img {
+    width: 20px;
+  }
+
+  .container .main-content h4 {
+    font-size: 18px
+      }
+}

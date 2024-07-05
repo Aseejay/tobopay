@@ -1,23 +1,23 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomePageComponent } from './home-page/home-page.component';
-import { ContactPageComponent } from './contact-page/contact-page.component';
-import { AgentPageComponent } from './agent-page/agent-page.component';
-import { TermOfServiceComponent } from './term-of-service/term-of-service.component';
-import { FeaturesComponent } from './home-page/features/features.component';
-import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { HomeComponent } from './landing-page/home/home.component';
+import { ContactUsComponent } from './landing-page/contact-us/contact-us.component';
+import { AgentComponent } from './landing-page/agent/agent.component';
+import { TermsOfServiceComponent } from './landing-page/terms-of-service/terms-of-service.component';
+import { PrivacyOfPolicyComponent } from './landing-page/privacy-of-policy/privacy-of-policy.component';
+import { DeactivateAccountComponent } from './landing-page/deactivate-account/deactivate-account.component';
 
 const routes: Routes = [
-  {path:'', redirectTo:'/home', pathMatch:'full'},
-  {path:'home', component:HomePageComponent, children:[{path:'features', component:FeaturesComponent}]},
-  {path:'contact-us', component:ContactPageComponent},
-  {path:':url/agent', component:AgentPageComponent},
-  {path:':url/term-of-service', component:TermOfServiceComponent},
-  {path:':url/privacy-policy', component:PrivacyPolicyComponent}
+  { path: '', component: HomeComponent },
+  { path: 'contact-us', component: ContactUsComponent },
+  { path: 'become-an-agent', component: AgentComponent },
+  {path:'terms-of-service', component:TermsOfServiceComponent},
+  {path:'privacy-of-policy', component:PrivacyOfPolicyComponent},
+  {path:'Deactivate-account', component:DeactivateAccountComponent}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes,)],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

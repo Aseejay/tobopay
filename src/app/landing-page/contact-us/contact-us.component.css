@@ -1,0 +1,155 @@
+.container {
+  display: flex;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.container .left .card-group {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.container .left .card-group p {
+  font-weight: 600;
+  padding: 5px;
+  padding-left: 3px;
+  width: 85%;
+  padding-right: 30px;
+  gap: 5px;
+  border-radius: 15px;
+  font-size: 15px;
+  color: #171717;
+  display: flex;
+  align-items: center;
+  border: 1px solid #f0eef7;
+}
+.container .left h4 {
+  font-size: 42px;
+  margin: 0px;
+}
+
+.container .left p {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.3rem;
+  color: #514767;
+  width: 80%;
+}
+.container .left .card-group img {
+  width: 20px;
+}
+.container .right {
+  background-color: #f0eef7;
+  width: 80%;
+  border-radius: 8px;
+}
+
+.container .left {
+  width: 60%;
+}
+.container .right .form {
+  margin: 15px;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: #fafafa;
+}
+
+:host ::ng-deep .p-dropdown {
+  width: 100%;
+  background-color: #fafafa;
+}
+
+:host ::ng-deep .p-dropdown .p-dropdown-label.p-placeholder {
+  color: #a098b3;
+  font-size: 14px;
+  font-weight: 200; /* Replace this with your desired placeholder color */
+}
+.container .right .form p {
+  font-size: 14px;
+  color: #514767;
+}
+
+.container .right .form input {
+  font-family: public sans;
+  outline: none;
+  font-size: 14px;
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  background-color: #fafafa;
+  padding: 13px;
+  border-radius: 7px;
+}
+
+.container .right .form input::placeholder {
+  color: #a098b3;
+  font-weight: 200;
+  font-size: 14px;
+}
+.container .right .form textarea {
+  font-family: public sans;
+  border: 1px solid #e0e0e0;
+  background-color: #fafafa;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 7px;
+}
+.container .right .form textarea::placeholder {
+  color: #a098b3;
+  font-weight: 200;
+  font-size: 14px;
+}
+.container .right .form button {
+  width: 100%;
+  margin-top: 6px;
+  font-family: public sans;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 8px;
+  color: #fafafa;
+  background-color: #533d85;
+  border: none;
+}
+
+.container .right .form button:disabled {
+  opacity: 0.5;
+}
+:host ::ng-deep .p-dialog {
+  width: 30%;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 20px;
+  }
+
+  .container .right {
+    width: 100%;
+  }
+
+  .container .left {
+    width: 100%;
+  }
+
+  .container .left p {
+    width: 100%;
+
+    line-height: 1.2rem;
+  }
+
+  .container .left h4 {
+    font-size: 33px;
+  }
+  .container .right .form {
+    margin: 7px;
+  }
+
+  :host ::ng-deep .p-dialog {
+    border: none;
+    width: 80%;
+  }
+}
